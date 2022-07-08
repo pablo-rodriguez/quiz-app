@@ -1,0 +1,71 @@
+{%extends "layout.html"%}
+{%block title%}
+Question 8
+{%endblock title%}
+{%block content%}
+    <div class="quizcontainer dnacontainer">
+        <div>
+
+        </div>
+        <div class="form">
+            <p>8.  Which day is Earth Day?</p>
+        <form action="/q8/" method="POST">
+            <div class="field">
+                <div class="label">
+                    <label for="">
+                        April 22
+                    </label>
+                </div>
+                <div class="input">
+                    <input type="radio" name="q8" id="opt1" value="1">
+                </div>
+            </div>
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    December 21
+                </label>
+            </div>
+            <div class="input">
+                <input type="radio" name="q8" id="opt2" value="2">
+            </div>
+        </div> 
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    August 12
+                </label>
+            </div>
+            <div class="input">
+                <input type="radio" name="q8" id="opt3" value="3">
+        </div>
+        </div>
+            <div class="field">
+                <div class="label">
+                    <label for="">
+                        October 31
+                    </label>
+                </div>
+                <div class="input">
+                    <input type="radio" name="q8" id="opt4" value="4">
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+            </form>
+        <div class="previous">
+        <a href="/q7">
+            <button>
+                Previous Question
+            </button>
+        </a>
+        </div>
+        <div class="next">
+            <a href="/q9">
+                <button>
+                    Next Question
+                </button>
+            </a>
+        </div>
+        </div>
+    </div>
+{%endblock content%}

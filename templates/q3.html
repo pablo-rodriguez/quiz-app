@@ -1,0 +1,71 @@
+{%extends "layout.html"%}
+{%block title%}
+Question 3
+{%endblock title%}
+{%block content%}
+    <div class="quizcontainer dnacontainer">
+        <div>
+
+        </div>
+        <div class="form">
+            <p>3.  What does DNA stand for?</p>
+        <form action="/q3/" method="POST">
+            <div class="field">
+                <div class="label">
+                    <label for="">
+                        Diribonucleic Acid
+                    </label>
+                </div>
+                <div class="input">
+                    <input type="radio" name="q1" id="opt1" value="1">
+                </div>
+            </div>
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Deoxyribonucleic Ants
+                </label>
+            </div>
+            <div class="input">
+                <input type="radio" name="q1" id="opt2" value="2">
+            </div>
+        </div> 
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Deoxyribonucleic Acid
+                </label>
+            </div>
+            <div class="input">
+                <input type="radio" name="q1" id="opt3" value="3">
+        </div>
+        </div>
+            <div class="field">
+                <div class="label">
+                    <label for="">
+                        Deoxynucleic Acid
+                    </label>
+                </div>
+                <div class="input">
+                    <input type="radio" name="q1" id="opt4" value="4">
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+            </form>
+        <div class="previous">
+        <a href="/q2">
+            <button>
+                Previous Question
+            </button>
+        </a>
+        </div>
+        <div class="next">
+            <a href="/q4">
+                <button>
+                    Next Question
+                </button>
+            </a>
+        </div>
+        </div>
+    </div>
+{%endblock content%}

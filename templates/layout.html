@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}
+        {%endblock title%}
+    </title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="/about_me"> ABOUT ME </a></li>
+            <li><a href="/my_projects"> MY PROJECTS </a></li>
+            <li><a href="/my_interests"> My Interests</a></li>
+            <li><a href="/q1">Quiz</a></li>
+            <li><a href="/leaderboard">Leaderboard</a></li>
+            {%if session.get("login")%}
+            <li><a href="/logout">Logout</a></li> 
+            {%else%}
+            <li><a href="/login">Login</a></li>
+            {%endif%}
+        </ul>
+    </div>
+    {%block content%}
+    {%endblock%}
+</body>
+</html>

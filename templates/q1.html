@@ -1,0 +1,73 @@
+{%extends "layout.html"%}
+{%block title%}
+Question 1
+{%endblock title%}
+{%block content%}
+<style>
+    body{
+    background-image: url(../static/questionmark.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    }
+</style>
+    {{message}}
+    <div class="quizcontainer">
+        <div>
+
+        </div>
+        <div class="form">
+            <p>1. What is the full from of HTML?</p>
+        <form action="/q1/" method="POST">
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q1" id="opt1" value="1">
+                </div>
+                <div class="label">
+                    <label for="opt1" class="opt1">
+                        Hypertext Meta Language
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q1" id="opt2" value="2">
+                </div>
+                <div class="label">
+                    <label for="opt2" class="opt2">
+                        Hypertext Markup Language
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q1" id="opt3" value="3">
+                </div>
+                <div class="label">
+                    <label for="opt3" class="opt3">
+                        Highertext Markup Language
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input" >
+                    <input type="radio" name="q1" id="opt4" value="4">
+                </div>
+                <div class="label">
+                    <label for="opt4" class="opt4">
+                        None of these
+                    </label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="next">
+            <a href="/q2">
+                <button>
+                    Next Question
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+{%endblock content%}

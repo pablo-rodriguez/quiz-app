@@ -1,0 +1,55 @@
+{%extends "layout.html"%}
+{%block title%}
+Login
+{%endblock title%}
+{%block content%}
+
+    <style>
+        body{
+            background:none;
+            background-image:url(../static/lake.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(2, 1, 27, 0.527);
+            background-blend-mode: multiply;
+            
+        }
+        .new_user a{
+            color: red;
+        }
+
+    </style>
+    <h1>{{result}}</h1>
+    <h2>{{message}}</h2>
+    <form action="/login/" class="register" method="POST">
+        <div class="field">
+                <div class="label">
+                    <label for="">
+                        Email:
+                    </label>
+                </div>
+                <div class="input">
+                    <input type="email" name="login_email">
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Password:
+                </label>
+            </div>
+            <div class="input">
+                <input type="password" name="login_password">
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit">
+                Login
+            </button>
+        </div>
+        <div class="new_user">
+            <p>New User? Click Here to <a href="/registration">register</a></p>
+        </div>
+    </form>
+{%endblock%}

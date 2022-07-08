@@ -1,0 +1,79 @@
+{%extends "layout.html"%}
+{%block title%}
+Question 6
+{%endblock title%}
+{%block content%}
+<style>
+    body{
+    background-image: url(../static/questionmark.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    }
+</style>
+    <div class="quizcontainer">
+        <div>
+
+        </div>
+        <div class="form">
+            <p>6. Which of the following is NOT a problem caused by deforestation?
+            </p>
+        <form action="/q6/" method="POST">
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q6" id="opt1" value="1">
+                </div>
+                <div class="label">
+                    <label for="">
+                        Loss of biodiversity
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q6" id="opt2" value="2">
+                </div>
+                <div class="label">
+                    <label for="">
+                        Hurting the economy
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q6" id="opt3" value="3">
+                </div>
+                <div class="label">
+                    <label for="">
+                        The harming of many indigenous people
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q6" id="opt4" value="4">
+                </div>
+                <div class="label">
+                    <label for="">
+                        These are all problems caused by deforestation
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="previous">
+            <a href="/q5">
+                <button>
+                    Previous Question
+                </button>
+            </a>
+        </div>
+        <div class="next">
+            <a href="/q7">
+                <button>
+                    Next Question
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+{%endblock content%}

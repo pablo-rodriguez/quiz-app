@@ -1,0 +1,79 @@
+{%extends "layout.html"%}
+{%block title%}
+Question 7
+{%endblock title%}
+{%block content%}
+<style>
+    body{
+    background-image: url(../static/questionmark.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    }
+</style>
+    <div class="quizcontainer">
+        <div>
+
+        </div>
+        <div class="form">
+            <p>7. How many million tons of plastic are dumped in our oceans every year?
+            </p>
+        <form action="/q7/" method="POST">
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q7" id="opt1" value="1">
+                </div>
+                <div class="label">
+                    <label for="">
+                        1 million
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q7" id="opt2" value="2">
+                </div>
+                <div class="label">
+                    <label for="">
+                        8 million
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q7" id="opt3" value="3">
+                </div>
+                <div class="label">
+                    <label for="">
+                        20 million
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q7" id="opt4" value="4">
+                </div>
+                <div class="label">
+                    <label for="">
+                        50 million
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="previous">
+            <a href="/q6">
+                <button>
+                    Previous Question
+                </button>
+            </a>
+        </div>
+        <div class="next">
+            <a href="/q8">
+                <button>
+                    Next Question
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+{%endblock content%}

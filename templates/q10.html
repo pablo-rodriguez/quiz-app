@@ -1,0 +1,59 @@
+{%extends "layout.html"%}
+{%block title%}
+Question 10
+{%endblock title%}
+{%block content%}
+<style>
+    body{
+    background-image: url(../static/questionmark.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    }
+</style>
+    <div class="quizcontainer">
+        <div>
+
+        </div>
+        <div class="form">
+            <p>10. True or Falso: Carbon dioxide is the most commonly used greenhouse gas.
+            </p>
+        <form action="/q10/" method="POST">
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q10" id="opt1" value="1">
+                </div>
+                <div class="label">
+                    <label for="opt1" class="opt1">
+                        True
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input">
+                    <input type="radio" name="q10" id="opt2" value="2">
+                </div>
+                <div class="label">
+                    <label for="opt2" class="opt2">
+                        False
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="previous">
+            <a href="/q9">
+                <button>
+                    Previous Question
+                </button>
+            </a>
+        </div>
+        <div class="next">
+            <a href="/qdata">
+                <button>
+                    Question Data
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+{%endblock content%}

@@ -1,0 +1,75 @@
+{%extends "layout.html"%}
+{%block title%}
+Leaderboard
+{%endblock title%}
+{%block content%}
+    <style>
+        .tableimage{
+            width: 200px;
+            height: 200px;
+        }
+        .tableimage img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <table>
+        <div class="theader">
+            <tr>
+                <th >Name</th>
+                <th>Grade</th>
+                <th>Rank</th>
+                <th>Score</th>
+            </tr>
+        </div>
+        <tr>
+        <div class="pla1" style="background-color: red;">
+                <td>
+                    <div class="tableimage">
+                        <img src="../static/profilepic1.jpg" alt="student profile">
+                    </div>
+                    <div class="profiletext">
+                    <p>John</p>
+                    <p> Student: Fort Payne High School</p>
+                </div>
+                </td>
+                <td>Grade</td>
+                <td>Rank</td>
+                <td>Score</td>
+            </div>
+        </tr>
+        <tr>
+        <div class="pla2">
+                <td>
+                    <div class="tableimage">
+                        <img src="../static/profilepic2.jpg" alt="student profile">
+                    </div>
+                    <div class="profiletext">
+                        <p>Sarah</p>
+                        <p>Student at Fort Payne High School</p>
+                    </div>
+                </td>
+                <td>Grade</td>
+                <td>Rank</td>
+                <td>Score</td>
+            </div>
+        </tr>
+        <tr>
+        <div class="pla3">
+                <td >
+                    <div class="tableimage">
+                        <img src="../static/profilepic3.jpg" alt="student profile">
+                    </div>
+                    <div class="profiletext">
+                        <p>Bob</p>
+                        <p>Teacher at Fort Payne High School</p>
+                    </div>
+                </td>
+                <td>Grade</td>
+                <td>Rank</td>
+                <td>Score</td>
+            </div>
+        </tr>
+    </table>
+{%endblock content%}

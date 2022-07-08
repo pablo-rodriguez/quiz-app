@@ -1,0 +1,71 @@
+{%extends "layout.html"%}
+{%block title%}
+Question 9
+{%endblock title%}
+{%block content%}
+    <div class="quizcontainer dnacontainer">
+        <div>
+
+        </div>
+        <div class="form">
+            <p>9.  What are the three pillars of Earth Days 2022 theme Invest In Our Planet?</p>
+        <form action="/q9/" method="POST">
+            <div class="field">
+                <div class="label">
+                    <label for="">
+                        Education, Engagement, Involvement
+                    </label>
+                </div>
+                <div class="input">
+                    <input type="radio" name="q9" id="opt1" value="1">
+                </div>
+            </div>
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Business, Governments, and Individuals
+                </label>
+            </div>
+            <div class="input">
+                <input type="radio" name="q9" id="opt2" value="2">
+            </div>
+        </div> 
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Action, Innovation, Implementation
+                </label>
+            </div>
+            <div class="input">
+                <input type="radio" name="q9" id="opt3" value="3">
+        </div>
+        </div>
+            <div class="field">
+                <div class="label">
+                    <label for="">
+                        Friends, French Fries, Forests
+                    </label>
+                </div>
+                <div class="input">
+                    <input type="radio" name="q9" id="opt4" value="4">
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+            </form>
+        <div class="previous">
+        <a href="/q8">
+            <button>
+                Previous Question
+            </button>
+        </a>
+        </div>
+        <div class="next">
+            <a href="/q10">
+                <button>
+                    Next Question
+                </button>
+            </a>
+        </div>
+        </div>
+    </div>
+{%endblock content%}

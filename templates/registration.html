@@ -1,0 +1,113 @@
+{%extends "layout.html"%}
+{%block title%}
+Registration
+{%endblock title%}
+{%block content%}
+    <style>
+        body{
+            background:none;
+            background-image:url(../static/lake.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-color: rgba(2, 1, 27, 0.527);
+            background-blend-mode: multiply;
+        }
+        .user_new a{
+            color: red;
+        }
+    </style>
+    <p>"Hi my name is" {{session.get("my name")}} </p>
+    <h1>{{result}}</h1>
+    <form action="/registration/" class="register" method="POST">
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Username: 
+                </label>
+            </div>
+            <div class="input">
+                <input type="username" name="username" id="" required>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Email: 
+                </label>
+            </div>
+            <div class="input">
+                <input type="email" name="email" id="" required>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Password: 
+                </label>
+            </div>
+            <div class="input">
+                <input type="password" name="password" id="" required>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Age: 
+                </label>
+            </div>
+            <div class="input">
+                <input type="number" name="age" id="">
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Gender: 
+                </label>
+            </div>
+            <div class="input">
+                Male
+                <input type="radio" name="radio" id="" value="male">
+                Female
+                <input type="radio" name="radio" id="" value="female">
+                Other
+                <input type="radio" name="radio" id="" value="other">
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    Language: 
+                </label>
+            </div>
+            <div class="input">
+                <select name="language" id="">
+                    <option value="eng">English</option>
+                    <option value="spa">Spanish</option>
+                    <option value="chi">Chinese</option>
+                    <option value="jap">Japanese</option>
+                    <option value="ger">German</option>
+                </select>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="">
+                    About: 
+                </label>
+            </div>
+            <div class="input">
+                <textarea name="about" id="" cols="20" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit">
+                Register
+            </button>
+        </div>
+        <div class="user_new">
+            <p>Already have an account? Click here to <a href="/login">login</a></p>
+        </div>
+    </form>
+{%endblock%}

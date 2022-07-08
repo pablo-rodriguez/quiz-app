@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body class="qdata">
+    <div class="questiondata">
+        <div class="qattempt">
+            <p>Number of questions attempted:</p>
+            <p>{{session.get("counter_attempted", 0)}}</p>
+        </div>
+        <div class="qattempt" >
+            <p>Number of questions correct:</p>
+            <p>{{session.get("count_correct", 0)}}</p>
+        </div>
+            <div class="qattempt">
+            <p>Number of questions incorrect:</p>
+            <p>{{session.get("count_incorrect", 0)}}</p>
+        </div>
+    </div>
+</body>
+</html>
